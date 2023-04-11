@@ -1,0 +1,70 @@
+.OptionBar {
+    width: 1016px;
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0%;
+    background-color: greenyellow;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 400px;
+    padding-top: 30px;
+}
+
+.Terminal {
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    border: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 400px;
+    color: greenyellow;
+    font-family: monospace;
+    padding: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resized {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.minimaze {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 20px;
+    height: 10px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.title {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
