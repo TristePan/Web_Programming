@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrazione</title>
+    </head>
+
+    <body>
+        <h3 align="center"> Registrazione utente </h3>
+        <form action="https://google.it/search" method="get">
+                <table  width="300" align="center">
+                    <tr>
+                        <td>Indirizzo Email</td>
+                        <td>Conferma Indirizzo Email</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" id="nome" placeholder="Email"></td>
+                        <td><input type="email" name="conferma_email" id="cognome" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>Conferma Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" id="password" placeholder="Password"></td>
+                        <td><input type="password" name="conferma_password" id="conferma_password" placeholder="Password"></td>
+                    </tr>
+                </table>
+
+                <hr align="center" size="3" width="400" color="red" noshade>
+                
+                <br>
+
+                <table  width="360" align="center">
+                    <tr>
+                        <td>Nome</td>
+                        <td>Secondo Nome</td>
+                        <td>Cognome</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nome" id="nome" size="10" placeholder="Nome"></td>
+                        <td><input type="text" name="secondo_nome" id="secondo_nome" size="12" placeholder="Secondo Nome"></td>
+                        <td><input type="text" name="cognome" id="cognome" size="13" placeholder="Cognome"></td>
+                    </tr>
+                    <tr>
+                        <td>Sesso</td>
+                        <td colspan="2">Città e indirizzo</td>
+                    </tr>
+                    <tr>
+                        <td><select name="sesso">
+                            <option value="maschio">Maschio</option>
+                            <option value="femmina">Femmina</option>
+                            <option value="altro">Altro</option>
+                        </td>
+                        <td colspan="2"><input type="text" name="citta_indirizzo" id="citta_indirizzo" size="26" placeholder="Città e Indirizzo"></td>
+                    </tr>
+                </table>
+
+                <hr align="center" size="3" width="400" color="red" noshade>
+
+                <br>
+
+                <table align="center">
+                    <tr>
+                        <td>Interessi</td>
+                        <td>S. O. Utilizzato</td>
+                    </tr>
+                    <tr>
+                    <td><table border="1">
+                                <td>
+                                    <p align = "left"><input type="checkbox" name="condizioni" id="condizioni"> Musica</p>
+                                    <p align = "left"><input type="checkbox" name="condizioni" id="condizioni"> Giochi</p>
+                                    <p align = "left"><input type="checkbox" name="condizioni" id="condizioni"> Arte</p>
+                                    <p align = "left"><input type="checkbox" name="condizioni" id="condizioni"> Fotografia</p>
+                                </td>
+                        </table> 
+                        </td>
+                        <td><table border="1">
+                                <td>
+                                    <p align = "left"><input type="radio" name="condizioni" id="condizioni"> Windows</p>
+                                    <p align = "left"><input type="radio" name="condizioni" id="condizioni"> Linux</p>
+                                    <p align = "left"><input type="radio" name="condizioni" id="condizioni"> MS Dos</p>
+                                    <p align = "left"><input type="radio" name="condizioni" id="condizioni"> Macintosh</p>
+                                </td>
+                            </table>
+                        </td>
+                    </tr>
+                </table>   
+
+            <hr align="center" size="3" width="400" color="red" noshade>
+            
+            <table align="center">
+                <tr>
+                <td align="center"><p>Accetti le condizioni?</p>
+                    <p><input type="checkbox" name="condizioni" id="condizioni"> Accetto</p>
+                </td>
+            </table>
+
+            <table width="24%" align="center">
+                <tr>
+                    <td>
+                    <p align="center"><button type="submit">Registrati</button></p>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </body>
+
+</html>
