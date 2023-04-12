@@ -1,29 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.terminal-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
 .OptionBar {
-    width: 1016px;
+    width: 100%;
+    padding-top: 30px;
     border: 1px solid black;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 0%;
     background-color: greenyellow;
     position: relative;
-    margin-top: 200px;
-    margin-left: 400px;
-    padding-top: 30px;
 }
 
 .Terminal {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.Terminal-text {
+    padding: 3px;
     background-color: black;
-    border: 30px;
+    color: greenyellow;
+    width: 100%;
+    height: 300px;
+    min-height: 100px;
+    font-family: monospace;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    position: relative;
-    margin-top: 0;
-    margin-left: 400px;
-    color: greenyellow;
-    font-family: monospace;
-    padding: 10px;
+    cursor: default;
+    border: none;
+    resize: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .close {
@@ -35,6 +52,7 @@
     line-height: 20px;
     font-weight: bold;
     cursor: pointer;
+    color: black;
 }
 
 .resized {
@@ -46,6 +64,7 @@
     line-height: 20px;
     font-weight: bold;
     cursor: pointer;
+    color: black;
 }
 
 .minimaze {
@@ -56,15 +75,40 @@
     height: 10px;
     line-height: 20px;
     font-weight: bold;
+    cursor: pointer;
+    color: black;
 }
 
 .title {
     position: absolute;
     top: 5px;
-    left: 0;
     width: 100%;
-    height: 20px;
     line-height: 20px;
-    font-weight: bold;
     text-align: center;
+    font-family: monospace;
+    color: black;
+    cursor: default;
+    user-select: none;
+}
+
+.animate-zoom {
+    animation: zoom 0.6s ease-out;
+    /*transform: scale(0);*/
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.favicon {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 20px;
+    height: auto;
 }
