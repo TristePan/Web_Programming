@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+#ToolBar {
+    font-size: 20px;
+    border: 10px solid black;
+}
+=======
 * {
     box-sizing: border-box;
 }
@@ -112,3 +118,5 @@
     width: 20px;
     height: auto;
 }
+
+>>>>>>> 2a15837209ffb592cd9cfa9f64535556de7de207
