@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: 10px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.flex>.card {
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    width: 50px;
+}
+
+.flex>.card.red {
+    border-color: red;
+    color: red;
+    order: 1;
+
+}
+
+.flex>.card.blue {
+    border-color: blue;
+    color: blue;
+}
+
+.flex>.card.green {
+    border-color: green;
+    color: green;
+    order: 2;
+}
+
+.flex>.card.yellow {
+    border-color: yellowgreen;
+    color: yellowgreen;
+}
+
+.flex>.card.purple {
+    border-color: purple;
+    color: purple;
+}
