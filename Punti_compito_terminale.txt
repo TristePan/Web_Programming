@@ -1,0 +1,10 @@
+Rendere l'esercizio del terminale reale.
+Possibilità di eseguire 4 comandi diversi:
+    - far stampare ora e data attuali
+    - far stampare "Hello World"
+    - ...
+    - a descrizione nostra
+
+creare un pulsante che permetta di aprire più terminali
+far si che possiamo spostare il terminale con il mouse
+Per me(o per chi vuole), rendere i pulsanti effettivi e funzionali.

@@ -16,6 +16,49 @@
     transform: translate(-50%, -50%);
 }
 
+.terminal-input {
+    padding: 3px;
+    background-color: black;
+    color: greenyellow;
+    width: 100%;
+    height: 300px;
+    min-height: 100px;
+    min-width: 300px;
+    font-family: monospace;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: default;
+    border: black;
+    resize: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.terminal-output {
+    background-color: black;
+    color: greenyellow;
+    max-height: 100px;
+    max-width: 300px;
+    font-family: monospace;
+    cursor: default;
+    border: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input {
+    padding: 3px;
+    background-color: black;
+    color: greenyellow;
+    min-width: 300px;
+    font-family: monospace;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: default;
+    border: black;
+    resize: none;
+    outline: none;
+    border: 0px;
+}
+
 .OptionBar {
     width: 100%;
     padding-top: 30px;
@@ -27,62 +70,52 @@
     position: relative;
 }
 
-.Terminal {
+.OptionBar-buttons {
+    position: absolute;
+    right: 20px;
     width: 100%;
-    min-width: 300px;
+    height: 100%;
 }
 
-.Terminal-text {
-    padding: 3px;
-    background-color: black;
-    color: greenyellow;
-    width: 100%;
-    height: 300px;
-    min-height: 100px;
-    font-family: monospace;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    cursor: default;
-    border: none;
-    resize: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.close {
+.minimize {
+    background-color: greenyellow;
     position: absolute;
     top: 5px;
-    right: 0;
+    right: 40px;
     width: 20px;
     height: 20px;
+    border: none;
     line-height: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: black;
 }
 
-.resized {
+.maximize {
+    background-color: greenyellow;
     position: absolute;
     top: 5px;
     right: 20px;
     width: 20px;
     height: 20px;
+    border: none;
     line-height: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: black;
 }
 
-.minimaze {
+.close {
+    background-color: greenyellow;
     position: absolute;
     top: 5px;
-    right: 40px;
+    right: 0;
     width: 20px;
-    height: 10px;
+    height: 20px;
+    border: none;
     line-height: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: black;
 }
+
 
 .title {
     position: absolute;

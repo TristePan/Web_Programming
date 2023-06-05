@@ -16,21 +16,31 @@
         <title>Linux Terminal</title>
     </head>
     <body>
-        <div id="ToolBar">
-            <p><i class="fa fa-rectangle-xmark"></i></p>
         <div class="terminal-container">
             <div class="animate-zoom">
                 <div class="OptionBar">
                     <img src="favicon.jpg" alt="favicon" class="favicon" />
                     <b class="title">HowToBho@Arch:~</b>
-                    <i class="close"><i class="fa fa-rectangle-xmark"></i></i>
-                    <i class="resized"><i class="fa-solid fa-minimize"></i></i>
-                    <i class="minimaze"><i class="fa fa-minus"></i></i>
+                    <button class="minimize"><i class="fa-solid fa-minimize"></i></button>
+                    <button class="maximize"><i class="fa-solid fa-maximize"></i></button>
+                    <button class="close"><i class="fa-solid fa-close"></i></button>
                 </div>
-                <div class="Terminal">
-                    <textarea class="Terminal-text" spellcheck="false">MaIoCheNeSo@Arch:~ </textarea>
+                <div class="terminal-input">
+                    <span>HowToBho@Arch:~$</span><input class="input" spellcheck="false" autofocus>
                 </div>
+                <div class="terminal-output"></div>
             </div>
         </div>
+
+        <script src="assets/main.js""></script>
     </body>
 </html>
+
+
+<!--
+    <i class="resized"><i class="fa-solid fa-minimize"></i></i>
+    <i class="minimaze"><i class="fa fa-minus"></i></i> 
+                            <button class="maximize"><i class="fa-solid fa-maximize"></i></button>
+                        <button class="close"><i class="fa-solid fa-close"></i></button>
+-->
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Terminale Linux</title>
+</head>
+
+<style>
+    body {
+        background-image: url("https://wallpapercave.com/wp/wp9421446.jpg");
+        color: #00FF00;
+        font-family: monospace;
+        font-size: 1.5em;
+    }
+
+    li {
+        width: 100px;
+        z-index: -1;
+    }
+
+    #terminal {
+        background: linear-gradient(#232222 0%,#000000 100%);
+        color: white;
+        font-family: monospace;
+        height: 300px;
+        overflow: auto;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #barrasuperiore {
+        background: linear-gradient(#504b45 0%,#3c3b37 100%);        
+        height: 35px;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .wrapper{
+        resize: both;
+        max-width: 100%;
+        max-height: 350px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+        min-width: 350px;
+        min-height: 150px;
+    }
+
+    #input-container{
+        display: inline-block;
+    }
+
+    /*da sistemare*/
+    #input-container span {
+        margin-right: 5px;
+        color: #00FF00;
+        border-right: 8px solid #ffffff;
+        animation: cursor-blink 1s infinite;
+    }
+
+    @keyframes cursor-blink {
+        0% {
+            border-right-color: transparent;
+        }
+
+        50% {
+            border-right-color: #ffffff;
+        }
+
+        100% {
+            border-right-color: transparent;
+        }
+    }
+
+    #input {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        width: 1400px;
+    }
+
+    button{
+        border-radius: 10px; 
+        border-width: 0.5px; 
+        border-color: grey;
+        background:linear-gradient(grey 0%,#3c3b37 100%);
+    }
+
+    .chiudi{
+        background:linear-gradient(#ff0000 0%,#9d1d1d 100%);
+        border-radius: 10px;
+        border-width: 0.5px;
+        border-color: grey;
+
+    }
+
+    img{
+        width: 9px; 
+        height: 9px;
+    }
+
+</style>
+
+<body>
+<div class="wrapper">
+    <div id="barrasuperiore">
+        <table>
+            <tr>
+                <td>
+                    <input type="reset" class="chiudi" value="X"></input>
+                </td>
+                <td>
+                    <button id="minimizza" formaction="https://i.redd.it/wbnn4jk6p9j31.jpg">
+                        <img src="https://img.icons8.com/ios/256/minus-math.png">
+                    </button>
+                </td>
+                <td>
+                    <button class="massimizza">
+                        <img src="https://img.icons8.com/windows/256/maximize-button.png">
+                    </button>
+                </td>
+               
+
+            </tr>
+        </table>
+    </div>
+    <div id="terminal">
+        <div id="terminal-output" class="terminal-output"></div>
+        <div class="terminal-input">
+            <input type="text" id="terminal-input" onkeypress="" placeholder="Type here to search...">
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src = "main.js"></script>
+
+</html>
