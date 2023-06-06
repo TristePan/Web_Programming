@@ -37,6 +37,8 @@ var terminal = {
             terminal.addOutput("Comandi disponibili:");
             terminal.addOutput("  - clear: Cancella l'output");
             terminal.addOutput("  - help: Mostra l'elenco dei comandi");
+        } else if (command === "date") {
+            terminal.dateOutput();
         } else {
             terminal.addOutput("Comando sconosciuto: " + command);
         }
@@ -44,7 +46,7 @@ var terminal = {
 
     // Aggiungi un output al terminale
     addOutput: function (output) {
-        var terminalOutput = document.querySelector('.terminal-input');
+        var terminalOutput = document.querySelector('.terminal-output');
         var outputLine = document.createElement("p");
         outputLine.textContent = output;
         terminalOutput.appendChild(outputLine);
@@ -55,16 +57,75 @@ var terminal = {
         var terminalOutput = document.querySelector('.terminal-output');
         terminalOutput.innerHTML = "";
     },
+
+    //Aggiungi la data e ora
+    dateOutput: function () {
+        var date = new Date();
+        terminal.addOutput(date);
+    },
+
+    terminal
 };
 
-// Inizializza il terminale quando la pagina è completamente caricata
+//Inizializza il terminale quando la pagina è completamente caricata
 document.addEventListener("DOMContentLoaded", function () {
     terminal.init();
 });
 
 
-
+/*
 var createTerminal = document.getElementById("new-terminal");
 createTerminal.addEventListener("click", function () {
     createTerminal();
 });
+*/
+
+/*
+function createTerminal() {
+    //Crea un nuovo elemento div per il terminale
+    var newTerminal = document.createElement("div");
+
+    //Imposta un ID unico per il terminale
+    var terminalID = "terminal-" + Date.now();
+    newTerminal.setAttribute('class', terminalID);
+
+    //Crea un nuovo elemento input per il terminale
+    var newInput = document.createElement("input");
+    newInput.setAttribute('class', 'input');
+    newInput.setAttribute('type', 'text');
+
+    //Crea un nuovo elemento div per l'output del terminale
+    var newOutput = document.createElement("div");
+    newOutput.setAttribute('class', 'terminal-output');
+
+    //Aggiungi il terminale alla pagina
+    document.body.appendChild(newTerminal);
+    newTerminal.appendChild(newOutput);
+    newTerminal.appendChild(newInput);
+
+    //Inizializza il terminale
+    newTerminal = {
+        // Inizializza il terminale
+        init: function () {
+            // Aggiungi l'evento di ascolto per il tasto "Invio"
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Enter") {
+                    terminal.handleInput();
+                }
+            });
+        }
+
+    };
+
+    //Ottieni il riferimento al bottone
+    var terminalButton = document.querySelector('terminalButton');
+
+    //Aggiungi un ascoltatore di eventi al bottone per la creazoine di un nuovo terminale
+    terminalButton.addEventListener('click', createTerminal);
+
+    // Inizializza il terminale quando la pagina è completamente caricata
+    document.addEventListener("DOMContentLoaded", function () {
+        terminal.init();
+    });
+}
+*/
