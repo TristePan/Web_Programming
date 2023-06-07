@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emulatore terminale Linux</title>
+    <style>
+      body{
+        padding-top: 50px;
+        background-image: url("https://st.depositphotos.com/1017992/2705/v/950/depositphotos_27050839-stock-illustration-penguin-pattern.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .pinguino{
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        left: 40px;
+        top: 75px;
+      }
+      .pinguino1{
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        right: 40px;
+        top: 50px;
+      }
+      .container{
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        border-radius: 1%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .box{
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 400px;
+        width: 600px;
+        max-width: 100%;
+        min-height: 200px;
+        height: 400px;
+        max-height: 690px;
+        overflow: auto;
+        resize: both;
+        border-radius: 1%;
+      }
+      .terminal-input{
+        background-color: transparent;
+        color: white;
+        outline: none;
+        border: none;
+        width: 55%;
+      }
+      .utente{
+        color: white;
+      }
+      .X{
+        background-color: #f00;
+        border-radius:100%;
+      }
+      .q{
+          background-color: rgba(255, 213, 0, 0.788);
+          border-radius: 100%;
+      }
+      .vuoto{
+        width: 80%;
+      }
+      .button{
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="pinguino"><img src="pinguino.png" width="150px"></button>
+    <button class="pinguino1"><img src="pinguino-removebg-preview.png" width="150px"></button>
+    <table class="container">
+      <tr>
+        <td class="vuoto"></td>
+        <td class="button">
+          <button class="q" id="minimizza">_</button>
+          <button class="q" id="massimizza">⌂</button>
+          <button class="X">X</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="box">
+            <div class="terminal-output"></div>
+            <span class="utente">jojo104@superSO64:~# </span><input type="text" class="terminal-input" autofocus>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

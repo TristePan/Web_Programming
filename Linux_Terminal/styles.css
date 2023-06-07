@@ -14,42 +14,41 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 500px;
+    width: fit-content;
     max-width: 100%;
     transform: translate(-50%, -50%);
+    resize: both;
 }
 
 .terminal-input-output {
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 3px;
     background-color: transparent;
     color: greenyellow;
     width: 100%;
     height: 300px;
-    min-height: 100px;
+    min-height: 300px;
     min-width: 300px;
     font-family: monospace;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     cursor: default;
     border: black;
-    resize: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: auto;
 }
 
 .terminal-output {
     background-color: transparent;
-    color: greenyellow;
-    max-height: 300px;
-    max-width: 300px;
+    color: black;
+    max-width: 400px;
     font-family: monospace;
     cursor: default;
     border: black;
 }
 
-.input {
+.terminal-input {
     padding-left: 10px;
     background-color: transparent;
     color: greenyellow;
@@ -81,7 +80,7 @@ body {
     height: 100%;
 }
 
-.minimize {
+.minimizeButton {
     background-color: transparent;
     position: absolute;
     top: 5px;
@@ -94,7 +93,7 @@ body {
     cursor: pointer;
 }
 
-.maximize {
+.maximizeButton {
     background-color: transparent;
     position: absolute;
     top: 5px;
@@ -107,7 +106,7 @@ body {
     cursor: pointer;
 }
 
-.close {
+.closeButton {
     background-color: transparent;
     position: absolute;
     top: 5px;
@@ -120,6 +119,15 @@ body {
     cursor: pointer;
 }
 
+.openButton {
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    top: 95%;
+    left: 50%;
+}
+
 .title {
     position: absolute;
     top: 5px;
@@ -130,6 +138,10 @@ body {
     color: black;
     cursor: default;
     user-select: none;
+}
+
+.utente {
+    color: greenyellow;
 }
 
 .animate-zoom {
@@ -152,11 +164,4 @@ body {
     left: 10px;
     width: 20px;
     height: auto;
-}
-
-.terminalButton {
-    background-color: transparent;
-    position: absolute;
-    cursor: pointer;
-    border: none;
 }
